@@ -54,9 +54,9 @@ def joinus():
 def sitemap():
     return render_template("Sitemap.html")
 
-@app.route('/test')
+@app.route('/basic-templete/')
 def test():
-    return render_template()
+    return render_template("base.html")
 
 
 app.run(debug=True)
