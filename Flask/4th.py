@@ -54,6 +54,11 @@ def joinus():
 def sitemap():
     return render_template("Sitemap.html")
 
+
+@app.route('/useful-links/')
+def useful():
+    return render_template("Useful.html")
+
 @app.route('/basic-template/')
 def test():
     return render_template("base.html")
