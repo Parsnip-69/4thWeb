@@ -59,6 +59,11 @@ def sitemap():
 def useful():
     return render_template("Useful.html")
 
+@app.route('/YLs/')
+def yls():
+    return render_template("YoungLeaders.html")
+
+
 @app.route('/basic-template/')
 def test():
     return render_template("base.html")
